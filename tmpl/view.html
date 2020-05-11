@@ -1,0 +1,13 @@
+<h1>{{.Title}}</h1>
+
+<h2>Index</h2>
+
+<div>
+    {{range .Index}}
+    <a href="/view/{{.}}">{{.}}</a>
+    {{end}}
+</div>
+
+<p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+
+<div>{{printf "%s" .Body}}</div>
